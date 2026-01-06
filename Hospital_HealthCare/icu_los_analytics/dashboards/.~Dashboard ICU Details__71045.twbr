@@ -1,0 +1,2132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <DashboardGridOverlay />
+    <DashboardGridSize />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Feature_ICU' inline='true' name='federated.078h0ym0zan93g177wmn00syiqzv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Feature_ICU' name='textscan.0k58nlf0klcz1v1d44wv90t60eek'>
+            <connection class='textscan' directory='/Users/mandiraghimire/Desktop/ManufileGit/Project/Hospital_HealthCare/icu_los_analytics/data/results' filename='Feature_ICU.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0k58nlf0klcz1v1d44wv90t60eek' name='Feature_ICU.csv' table='[Feature_ICU#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='stay_id' ordinal='0' />
+            <column datatype='integer' name='subject_id' ordinal='1' />
+            <column datatype='integer' name='hadm_id' ordinal='2' />
+            <column datatype='string' name='first_careunit' ordinal='3' />
+            <column datatype='string' name='last_careunit' ordinal='4' />
+            <column datatype='datetime' name='intime' ordinal='5' />
+            <column datatype='datetime' name='outtime' ordinal='6' />
+            <column datatype='real' name='los' ordinal='7' />
+            <column datatype='integer' name='procedure_events' ordinal='8' />
+            <column datatype='real' name='total_output_ml' ordinal='9' />
+            <column datatype='integer' name='output_events' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stay_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stay_id]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>stay_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[subject_id]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>subject_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hadm_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hadm_id]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>hadm_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_careunit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_careunit]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>first_careunit</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_careunit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_careunit]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>last_careunit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[intime]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>intime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outtime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[outtime]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>outtime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>los</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[los]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>los</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>procedure_events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[procedure_events]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>procedure_events</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_output_ml</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_output_ml]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>total_output_ml</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>output_events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[output_events]</local-name>
+            <parent-name>[Feature_ICU.csv]</parent-name>
+            <remote-alias>output_events</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Long Stay ' datatype='string' name='[Calculation_4580934901913624577]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([los]) &gt;= WINDOW_PERCENTILE(SUM([los]), 0.90) THEN &quot;Top 10% Long Stay&quot; ELSE &quot;Other&quot; END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Intime Month' datatype='datetime' name='[Calculation_4665588501174071296]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [intime])' />
+      </column>
+      <column caption='Careunit Transfer' datatype='string' name='[Calculation_4665588501176463361]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [first_careunit] != [last_careunit] THEN &quot;Transferred&quot;&#10;ELSE &quot;No Transfer&quot;&#10;END' />
+      </column>
+      <column caption='LOS Risk Bands' datatype='string' name='[Calculation_4665588501177073666]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [los] &lt; 1 THEN &quot;Short Stay (&lt;1 day)&quot;&#10;ELSEIF [los] &lt; 3 THEN &quot;Medium Stay (1–3 days)&quot;&#10;ELSE &quot;Long Stay (&gt;3 days)&quot;&#10;END' />
+      </column>
+      <column caption='Long Stay Flag' datatype='integer' name='[Calculation_4885279720537849856]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [los] &gt; 3 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='% Long Stay' datatype='real' name='[Calculation_4885279720538116097]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_4885279720537849856]) / COUNT([stay_id])' />
+      </column>
+      <column aggregation='None' caption='Los (bin)' datatype='integer' name='[Los (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[los]' peg='0' size='2.7' />
+      </column>
+      <column caption='Feature_ICU.csv' datatype='table' name='[__tableau_internal_object_id__].[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]' role='measure' type='quantitative' />
+      <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+      <column caption='Hadm Id' datatype='integer' name='[hadm_id]' role='dimension' type='ordinal' />
+      <column caption='Intime' datatype='datetime' name='[intime]' role='dimension' type='ordinal' />
+      <column caption='Last Careunit' datatype='string' name='[last_careunit]' role='dimension' type='nominal' />
+      <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+      <column caption='Output Events' datatype='integer' name='[output_events]' role='measure' type='quantitative' />
+      <column caption='Outtime' datatype='datetime' name='[outtime]' role='dimension' type='ordinal' />
+      <column caption='Procedure Events' datatype='integer' name='[procedure_events]' role='measure' type='quantitative' />
+      <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+      <column caption='Subject Id' datatype='integer' name='[subject_id]' role='dimension' type='ordinal' />
+      <column caption='Total Output Ml' datatype='real' name='[total_output_ml]' role='measure' type='quantitative' />
+      <column-instance column='[procedure_events]' derivation='Avg' name='[avg:procedure_events:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_output_ml]' derivation='Avg' name='[avg:total_output_ml:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+      <column-instance column='[procedure_events]' derivation='Sum' name='[sum:procedure_events:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_output_ml]' derivation='Sum' name='[sum:total_output_ml:qk]' pivot='key' type='quantitative' />
+      <group caption='Top 10% LOS Stays' name='[Top 10% LOS Stays]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='AVG([los])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[stay_id]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1fn4fbo02nzu2t10c2egb0l1q4na.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/29/2025 10:29:34 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>stay_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stay_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stay_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94458</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subject_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[subject_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subject_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hadm_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hadm_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hadm_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89542</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_careunit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[first_careunit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_careunit</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_careunit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_careunit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_careunit</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[intime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intime</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>94458</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outtime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[outtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outtime</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>94458</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>los</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[los]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>los</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84625</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>procedure_events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[procedure_events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>procedure_events</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>168</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_output_ml</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_output_ml]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_output_ml</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11244</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>output_events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[output_events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>output_events</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Feature_ICU.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>928</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:first_careunit:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Neuro Intermediate&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Medical Intensive Care Unit (MICU)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;PACU&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Neuro Stepdown&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Coronary Care Unit (CCU)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Trauma SICU (TSICU)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Medicine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Surgery/Trauma&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Surgery/Vascular/Intermediate&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Medicine/Cardiology Intermediate&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Intensive Care Unit (ICU)&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Surgical Intensive Care Unit (SICU)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Neurology&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Med/Surg&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.078h0ym0zan93g177wmn00syiqzv].[avg:procedure_events:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.078h0ym0zan93g177wmn00syiqzv].[sum:procedure_events:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.078h0ym0zan93g177wmn00syiqzv].[avg:total_output_ml:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Feature_ICU.csv' id='Feature_ICU.csv_19C91BA68DD94A6B88704893CE64CBF1'>
+            <properties context=''>
+              <relation connection='textscan.0k58nlf0klcz1v1d44wv90t60eek' name='Feature_ICU.csv' table='[Feature_ICU#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='stay_id' ordinal='0' />
+                  <column datatype='integer' name='subject_id' ordinal='1' />
+                  <column datatype='integer' name='hadm_id' ordinal='2' />
+                  <column datatype='string' name='first_careunit' ordinal='3' />
+                  <column datatype='string' name='last_careunit' ordinal='4' />
+                  <column datatype='datetime' name='intime' ordinal='5' />
+                  <column datatype='datetime' name='outtime' ordinal='6' />
+                  <column datatype='real' name='los' ordinal='7' />
+                  <column datatype='integer' name='procedure_events' ordinal='8' />
+                  <column datatype='real' name='total_output_ml' ordinal='9' />
+                  <column datatype='integer' name='output_events' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_6FC4CDBD389143918A4599B37CB903AF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='ICU ' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='First Careunit' />
+        <param name='target' value='ICU ' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% Long-Stay ICU Patients'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column caption='Long Stay Flag' datatype='integer' name='[Calculation_4885279720537849856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [los] &gt; 3 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='% Long Stay' datatype='real' name='[Calculation_4885279720538116097]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_4885279720537849856]) / COUNT([stay_id])' />
+            </column>
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_4885279720538116097]' derivation='User' name='[usr:Calculation_4885279720538116097:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.078h0ym0zan93g177wmn00syiqzv].[usr:Calculation_4885279720538116097:qk]' value='p0.00%' />
+            <format attr='height' value='107' />
+            <format attr='width' value='306' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.078h0ym0zan93g177wmn00syiqzv].[usr:Calculation_4885279720538116097:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>% Long Stay ICU Patients</run>
+                <run>Æ&#10;</run>
+                <run fontsize='28'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[usr:Calculation_4885279720538116097:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{05506B2C-705D-42A2-BD51-5D5AA27E0AE2}' />
+    </worksheet>
+    <worksheet name='Avg LOS'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[los]' derivation='Avg' name='[avg:los:qk]' pivot='key' type='quantitative' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='317' />
+            <format attr='height' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='15'>Avg ICU Length of Stay (Days)</run>
+                <run>Æ&#10;</run>
+                <run fontsize='28'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7E22F003-FF1B-4E3A-B295-98D2BA00CFFF}' />
+    </worksheet>
+    <worksheet name='Avg Procedure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg Procedures</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[procedure_events]' derivation='Avg' name='[avg:procedure_events:qk]' pivot='key' type='quantitative' />
+            <column caption='Procedure Events' datatype='integer' name='[procedure_events]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='106' />
+            <format attr='width' value='302' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:procedure_events:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontname='Tableau Light' fontsize='15'>Avg Procedures per ICU Stay</run>
+                <run>Æ&#10;</run>
+                <run fontsize='28'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[avg:procedure_events:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CD9FE3EC-46C2-407D-9099-6D3C1C69C3C2}' />
+    </worksheet>
+    <worksheet name='Fluid output vs LOS '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Fluid output vs LOS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[los]' derivation='Avg' name='[avg:los:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_output_ml]' derivation='Sum' name='[sum:total_output_ml:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Output Ml' datatype='real' name='[total_output_ml]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]</cols>
+      </table>
+      <simple-id uuid='{4B13E83B-597C-4678-B454-D5982153BBE3}' />
+    </worksheet>
+    <worksheet name='ICU admission by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ICU Admissions by Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[stay_id]' derivation='CountD' name='[ctd:stay_id:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Intime' datatype='datetime' name='[intime]' role='dimension' type='ordinal' />
+            <column-instance column='[intime]' derivation='Month' name='[mn:intime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.078h0ym0zan93g177wmn00syiqzv].[mn:intime:qk]' field-type='quantitative' max='12' min='1' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.078h0ym0zan93g177wmn00syiqzv].[mn:intime:qk]' value='iLLL' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Month :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[mn:intime:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>ICU Stays Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[ctd:stay_id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[ctd:stay_id:qk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[mn:intime:qk]</cols>
+      </table>
+      <simple-id uuid='{9E85586F-6BAA-4F25-B126-3CFAF1171E39}' />
+    </worksheet>
+    <worksheet name='Long Stay'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[procedure_events]' derivation='Avg' name='[avg:procedure_events:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_output_ml]' derivation='Avg' name='[avg:total_output_ml:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+            <column caption='Procedure Events' datatype='integer' name='[procedure_events]' role='measure' type='quantitative' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+            <column caption='Total Output Ml' datatype='real' name='[total_output_ml]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[Top 10% LOS Stays]' />
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[Top 10% LOS Stays]</column>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:procedure_events:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:total_output_ml:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.078h0ym0zan93g177wmn00syiqzv].[avg:procedure_events:qk] + [federated.078h0ym0zan93g177wmn00syiqzv].[avg:total_output_ml:qk])</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</cols>
+      </table>
+      <simple-id uuid='{22F9B308-32C8-4BE8-A373-B7E2F55948DA}' />
+    </worksheet>
+    <worksheet name='Los Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>LOS Distribution </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column aggregation='None' caption='Los (bin)' datatype='integer' name='[Los (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-1' formula='[los]' peg='0' size='2.7' />
+            </column>
+            <column-instance column='[stay_id]' derivation='Count' name='[cnt:stay_id:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[Los (bin)]' derivation='None' name='[none:Los (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Los (bin):ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='%null%' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='18' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='19' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='20' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='21' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='22' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='23' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='24' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='25' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='26' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='27' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='28' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='29' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='30' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='31' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='32' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='33' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='34' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='35' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='36' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='37' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='38' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='40' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='41' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='44' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='47' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='50' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='51' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='59' />
+                <groupfilter function='member' level='[none:Los (bin):ok]' member='83' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]' direction='ASC'>
+            <dictionary>
+              <bucket>0</bucket>
+              <bucket>1</bucket>
+              <bucket>2</bucket>
+              <bucket>3</bucket>
+              <bucket>4</bucket>
+              <bucket>5</bucket>
+              <bucket>6</bucket>
+              <bucket>7</bucket>
+              <bucket>8</bucket>
+              <bucket>9</bucket>
+              <bucket>10</bucket>
+              <bucket>11</bucket>
+              <bucket>12</bucket>
+              <bucket>13</bucket>
+              <bucket>14</bucket>
+              <bucket>15</bucket>
+              <bucket>16</bucket>
+              <bucket>17</bucket>
+              <bucket>18</bucket>
+              <bucket>19</bucket>
+              <bucket>20</bucket>
+              <bucket>21</bucket>
+              <bucket>22</bucket>
+              <bucket>23</bucket>
+              <bucket>24</bucket>
+              <bucket>25</bucket>
+              <bucket>26</bucket>
+              <bucket>27</bucket>
+              <bucket>28</bucket>
+              <bucket>33</bucket>
+              <bucket>29</bucket>
+              <bucket>30</bucket>
+              <bucket>31</bucket>
+              <bucket>32</bucket>
+              <bucket>34</bucket>
+              <bucket>35</bucket>
+              <bucket>36</bucket>
+              <bucket>37</bucket>
+              <bucket>38</bucket>
+              <bucket>39</bucket>
+              <bucket>40</bucket>
+              <bucket>41</bucket>
+              <bucket>42</bucket>
+              <bucket>43</bucket>
+              <bucket>44</bucket>
+              <bucket>45</bucket>
+              <bucket>46</bucket>
+              <bucket>47</bucket>
+              <bucket>48</bucket>
+              <bucket>49</bucket>
+              <bucket>50</bucket>
+              <bucket>51</bucket>
+              <bucket>52</bucket>
+              <bucket>53</bucket>
+              <bucket>54</bucket>
+              <bucket>55</bucket>
+              <bucket>56</bucket>
+              <bucket>57</bucket>
+              <bucket>58</bucket>
+              <bucket>59</bucket>
+              <bucket>60</bucket>
+              <bucket>61</bucket>
+              <bucket>62</bucket>
+              <bucket>63</bucket>
+              <bucket>64</bucket>
+              <bucket>65</bucket>
+              <bucket>66</bucket>
+              <bucket>67</bucket>
+              <bucket>68</bucket>
+              <bucket>69</bucket>
+              <bucket>70</bucket>
+              <bucket>71</bucket>
+              <bucket>72</bucket>
+              <bucket>73</bucket>
+              <bucket>74</bucket>
+              <bucket>75</bucket>
+              <bucket>76</bucket>
+              <bucket>77</bucket>
+              <bucket>78</bucket>
+              <bucket>79</bucket>
+              <bucket>80</bucket>
+              <bucket>81</bucket>
+              <bucket>82</bucket>
+              <bucket>83</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;</bucket>
+              <bucket>&quot;Coronary Care Unit (CCU)&quot;</bucket>
+              <bucket>&quot;Intensive Care Unit (ICU)&quot;</bucket>
+              <bucket>&quot;Med/Surg&quot;</bucket>
+              <bucket>&quot;Medical Intensive Care Unit (MICU)&quot;</bucket>
+              <bucket>&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;</bucket>
+              <bucket>&quot;Medicine&quot;</bucket>
+              <bucket>&quot;Medicine/Cardiology Intermediate&quot;</bucket>
+              <bucket>&quot;Neuro Intermediate&quot;</bucket>
+              <bucket>&quot;Neuro Stepdown&quot;</bucket>
+              <bucket>&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;</bucket>
+              <bucket>&quot;Neurology&quot;</bucket>
+              <bucket>&quot;PACU&quot;</bucket>
+              <bucket>&quot;Surgery/Trauma&quot;</bucket>
+              <bucket>&quot;Surgery/Vascular/Intermediate&quot;</bucket>
+              <bucket>&quot;Surgical Intensive Care Unit (SICU)&quot;</bucket>
+              <bucket>&quot;Trauma SICU (TSICU)&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]</column>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]' value='102' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[cnt:stay_id:qk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.078h0ym0zan93g177wmn00syiqzv].[Los (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4D13CD01-5DB1-4A1F-B4DB-592050E79923}' />
+    </worksheet>
+    <worksheet name='Los by ICU Unit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average LOS by Care Unit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[los]' derivation='Avg' name='[avg:los:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Neurology&quot;</bucket>
+              <bucket>&quot;Medicine&quot;</bucket>
+              <bucket>&quot;Surgery/Vascular/Intermediate&quot;</bucket>
+              <bucket>&quot;Surgery/Trauma&quot;</bucket>
+              <bucket>&quot;Intensive Care Unit (ICU)&quot;</bucket>
+              <bucket>&quot;Neuro Intermediate&quot;</bucket>
+              <bucket>&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;</bucket>
+              <bucket>&quot;Neuro Stepdown&quot;</bucket>
+              <bucket>&quot;PACU&quot;</bucket>
+              <bucket>&quot;Surgical Intensive Care Unit (SICU)&quot;</bucket>
+              <bucket>&quot;Medical Intensive Care Unit (MICU)&quot;</bucket>
+              <bucket>&quot;Trauma SICU (TSICU)&quot;</bucket>
+              <bucket>&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;</bucket>
+              <bucket>&quot;Coronary Care Unit (CCU)&quot;</bucket>
+              <bucket>&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;</bucket>
+              <bucket>&quot;Medicine/Cardiology Intermediate&quot;</bucket>
+              <bucket>&quot;Med/Surg&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+              <text column='[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]</cols>
+      </table>
+      <simple-id uuid='{CCFCBA95-DB6C-42C1-B689-7E1F53F384CF}' />
+    </worksheet>
+    <worksheet name='Procedure Burden vs LOS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Procedure Burden vs LOS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[stay_id]' derivation='Attribute' name='[attr:stay_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[subject_id]' derivation='Attribute' name='[attr:subject_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[los]' derivation='Avg' name='[avg:los:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+            <column caption='Procedure Events' datatype='integer' name='[procedure_events]' role='measure' type='quantitative' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+            <column caption='Subject Id' datatype='integer' name='[subject_id]' role='dimension' type='ordinal' />
+            <column-instance column='[procedure_events]' derivation='Sum' name='[sum:procedure_events:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_output_ml]' derivation='Sum' name='[sum:total_output_ml:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Output Ml' datatype='real' name='[total_output_ml]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.078h0ym0zan93g177wmn00syiqzv].[sum:procedure_events:qk]' value='54' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' />
+              <size column='[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]' />
+              <tooltip column='[federated.078h0ym0zan93g177wmn00syiqzv].[attr:stay_id:qk]' />
+              <tooltip column='[federated.078h0ym0zan93g177wmn00syiqzv].[attr:subject_id:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[avg:los:qk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[sum:procedure_events:qk]</cols>
+      </table>
+      <simple-id uuid='{78380833-4FDA-4506-AD20-688478A9E86C}' />
+    </worksheet>
+    <worksheet name='Risk Band Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column caption='LOS Risk Bands' datatype='string' name='[Calculation_4665588501177073666]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [los] &lt; 1 THEN &quot;Short Stay (&lt;1 day)&quot;&#10;ELSEIF [los] &lt; 3 THEN &quot;Medium Stay (1–3 days)&quot;&#10;ELSE &quot;Long Stay (&gt;3 days)&quot;&#10;END' />
+            </column>
+            <column-instance column='[los]' derivation='Count' name='[cnt:los:qk]' pivot='key' type='quantitative' />
+            <column caption='First Careunit' datatype='string' name='[first_careunit]' role='dimension' type='nominal' />
+            <column caption='Los' datatype='real' name='[los]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_4665588501177073666]' derivation='None' name='[none:Calculation_4665588501177073666:nk]' pivot='key' type='nominal' />
+            <column-instance column='[first_careunit]' derivation='None' name='[none:first_careunit:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Cardiac Vascular Intensive Care Unit (CVICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Coronary Care Unit (CCU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Intensive Care Unit (ICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Med/Surg&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical Intensive Care Unit (MICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medical/Surgical Intensive Care Unit (MICU/SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Medicine/Cardiology Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Stepdown&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neuro Surgical Intensive Care Unit (Neuro SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Neurology&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;PACU&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Trauma&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgery/Vascular/Intermediate&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Surgical Intensive Care Unit (SICU)&quot;' />
+              <groupfilter function='member' level='[none:first_careunit:nk]' member='&quot;Trauma SICU (TSICU)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.078h0ym0zan93g177wmn00syiqzv].[cnt:los:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Calculation_4665588501177073666:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.078h0ym0zan93g177wmn00syiqzv].[cnt:los:qk]</rows>
+        <cols>[federated.078h0ym0zan93g177wmn00syiqzv].[none:Calculation_4665588501177073666:nk]</cols>
+      </table>
+      <simple-id uuid='{89481DC9-D02A-464E-A47D-3BB14DD93764}' />
+    </worksheet>
+    <worksheet name='Total ICU Stays'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Feature_ICU' name='federated.078h0ym0zan93g177wmn00syiqzv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.078h0ym0zan93g177wmn00syiqzv'>
+            <column-instance column='[stay_id]' derivation='Count' name='[cnt:stay_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Stay Id' datatype='integer' name='[stay_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='208' />
+            <format attr='height' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.078h0ym0zan93g177wmn00syiqzv].[cnt:stay_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>Æ </run>
+                <run fontname='Benton Sans Book' fontsize='15'>Total ICU Admissions</run>
+                <run>Æ&#10;</run>
+                <run fontsize='28'><![CDATA[<[federated.078h0ym0zan93g177wmn00syiqzv].[cnt:stay_id:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6F0494EA-C211-4887-8200-61B7A12FC941}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='ICU '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='24'>ICU Stays </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffffe7' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-style' value='solid' />
+          <format attr='border-color' value='#000000' />
+          <format attr='text-align' value='center' />
+          <format attr='background-color' value='#f9f9f9' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#d4d4d4' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+          <format attr='font-size' value='10' />
+        </style-rule>
+      </style>
+      <size maxheight='4560' maxwidth='4120' minheight='1360' minwidth='1920' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98824' id='21' param='vert' type-v2='layout-flow' w='99166' x='417' y='588'>
+            <zone fixed-size='81' h='6544' id='22' is-fixed='true' type-v2='title' w='98750' x='625' y='882'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#fefaf1' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#fefaf1' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='34191' id='7' name='Los Distribution' w='42188' x='573' y='15074'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='16176' id='8' name='Los Distribution' pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type-v2='color' w='15365' x='83906' y='15074'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='dashed' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='34191' id='9' name='Los by ICU Unit' w='40885' x='42813' y='15074'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='2264' id='17' type-v2='dashboard-object' w='1250' x='100208' y='1792'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{CFA65415-684A-4A2B-9398-65F808149B0D}&quot; zone-id=&quot;17&quot; zone-ids=[8]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+        <zone h='7426' id='26' name='Total ICU Stays' show-title='false' w='11042' x='573' y='7132'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#f2f6f7' />
+          </zone-style>
+        </zone>
+        <zone h='7721' id='27' name='Avg LOS' show-title='false' w='16667' x='22656' y='7132'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='8015' id='28' name='Avg Procedure' show-title='false' w='16094' x='52344' y='6985'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7574' id='29' name='% Long-Stay ICU Patients' show-title='false' w='17135' x='81927' y='7353'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='26912' id='30' name='Procedure Burden vs LOS' w='42292' x='469' y='49338'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='9485' id='31' name='Procedure Burden vs LOS' pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]' type-v2='size' w='15313' x='84010' y='39559'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='dashed' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='26912' id='32' name='Fluid output vs LOS ' w='39271' x='42813' y='49338'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='26029' id='33' name='ICU admission by Month' w='42292' x='469' y='76324'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='24338' id='34' name='Risk Band Distribution' w='39219' x='42760' y='76324'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6985' id='35' name='Risk Band Distribution' pane-specification-id='1' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Calculation_4665588501177073666:nk]' type-v2='size' w='15625' x='83958' y='31765'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='dashed' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='51176' id='36' name='Long Stay' w='17917' x='82240' y='49191'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontsize='24'>ICU Stays </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='3450' minheight='3450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98824' id='37' param='vert' type-v2='layout-flow' w='99166' x='417' y='588'>
+                <zone fixed-size='81' h='6544' id='22' type-v2='title' w='98750' x='625' y='882'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#fefaf1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='8015' id='28' is-fixed='true' name='Avg Procedure' show-title='false' w='12552' x='52344' y='6985'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='7426' id='26' is-fixed='true' name='Total ICU Stays' show-title='false' w='11042' x='573' y='7132'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f6f7' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='7721' id='27' is-fixed='true' name='Avg LOS' show-title='false' w='12344' x='26979' y='7132'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='7574' id='29' is-fixed='true' name='% Long-Stay ICU Patients' show-title='false' w='17135' x='81927' y='7353'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34191' id='7' is-fixed='true' name='Los Distribution' w='42188' x='573' y='15074'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='16176' id='8' name='Los Distribution' pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type-v2='color' w='15365' x='83906' y='15074'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34191' id='9' is-fixed='true' name='Los by ICU Unit' w='40885' x='42813' y='15074'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51176' id='36' is-fixed='true' name='Long Stay' w='17917' x='82240' y='49191'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26912' id='30' is-fixed='true' name='Procedure Burden vs LOS' w='42292' x='469' y='49338'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9485' id='31' name='Procedure Burden vs LOS' pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]' type-v2='size' w='15313' x='84010' y='39559'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26912' id='32' is-fixed='true' name='Fluid output vs LOS ' w='39271' x='42813' y='49338'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='26029' id='33' is-fixed='true' name='ICU admission by Month' w='42292' x='469' y='76324'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24338' id='34' is-fixed='true' name='Risk Band Distribution' w='39219' x='42760' y='76324'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6985' id='35' name='Risk Band Distribution' pane-specification-id='1' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Calculation_4665588501177073666:nk]' type-v2='size' w='15625' x='83958' y='31765'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{701E0E9D-B800-4D09-856D-D79B7B792CB1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Los Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Los (bin):ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F3BE9536-217B-4797-A234-DC38E1FBB717}' />
+    </window>
+    <window class='worksheet' name='Los by ICU Unit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B0B94694-27C0-42BD-BAC2-CC1CC6149CB0}' />
+    </window>
+    <window class='worksheet' name='Procedure Burden vs LOS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[sum:total_output_ml:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6829D420-54D6-4150-B01C-977D1E251C4F}' />
+    </window>
+    <window class='worksheet' name='Fluid output vs LOS '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='47' type='filters' />
+            <card size='193' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D06B08BA-C3F6-4589-B77D-9AE444D70B1F}' />
+    </window>
+    <window class='worksheet' name='Long Stay'>
+      <cards>
+        <edge name='left'>
+          <strip size='279'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='1' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D8B3E992-F5A9-450C-9108-E6E98E362C5D}' />
+    </window>
+    <window class='worksheet' name='ICU admission by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:first_careunit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A53405FA-90E5-441C-9459-806D0A912748}' />
+    </window>
+    <window class='worksheet' name='Risk Band Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.078h0ym0zan93g177wmn00syiqzv].[none:Calculation_4665588501177073666:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{13F3310A-87A5-4AC5-AC8A-40A98F8D30A4}' />
+    </window>
+    <window class='worksheet' name='Total ICU Stays'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29902F73-C2B4-4D4A-B80F-98B91D44B3E5}' />
+    </window>
+    <window class='worksheet' name='Avg LOS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C298A743-C43E-4940-93D2-BEA62702B506}' />
+    </window>
+    <window class='worksheet' name='Avg Procedure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{73DCEBB9-51CF-425C-8034-E5E286D2E36D}' />
+    </window>
+    <window class='worksheet' name='% Long-Stay ICU Patients'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8BF6D95B-4390-4295-B4E3-E8C6B5DA7B34}' />
+    </window>
+    <window class='dashboard' name='ICU '>
+      <viewpoints>
+        <viewpoint name='% Long-Stay ICU Patients' />
+        <viewpoint name='Avg LOS' />
+        <viewpoint name='Avg Procedure' />
+        <viewpoint name='Fluid output vs LOS '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ICU admission by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Long Stay'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Los Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Los by ICU Unit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Procedure Burden vs LOS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Risk Band Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total ICU Stays' />
+      </viewpoints>
+      <active id='21' />
+      <grid grid-size='23' />
+      <simple-id uuid='{CFA65415-684A-4A2B-9398-65F808149B0D}' />
+    </window>
+  </windows>
+</workbook>
